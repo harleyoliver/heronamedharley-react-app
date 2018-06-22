@@ -1,0 +1,151 @@
+/*
+ *
+ * Global Styles
+ *
+ */
+
+html {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: rgb(236, 240, 241);
+}
+
+.loader {
+	width: 100vw;
+	height: 100vh;
+}
+
+.loader i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 72px;
+	transform: translate(-50%, -50%);
+	color: rgb(255, 255, 255);
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	width: 100%;
+}
+
+img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+}
+
+.single-post a {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
+	transition: all 0.3s ease-in-out;
+}
+
+.single-post a:hover {
+	color: #3498db;
+	border-bottom: 1px solid #3498db;
+}
+
+.navigation {
+	position: fixed;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	padding: 0 20px;
+}
+
+.navigation h1 {
+	display: inline-block;
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 0;
+}
+
+.navigation h3 {
+	display: inline-block;
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: 40px;
+}
+
+/*
+ *
+ * Posts List Styles
+ *
+ */
+.post {
+	box-sizing: border-box;
+}
+
+.post a {
+	display: block;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	padding: 15%;
+	font-size: 50px;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+
+.post a > span {
+	display: block;
+	font-size: 22px;
+}
+
+.post a:hover {
+	color: rgb(230, 126, 34);
+}
+
+/*
+ *
+ * Single Post Styles
+ *
+ */
+.desc h1 {
+	font-size: 48px;
+	padding: 40px;
+	color: #fff;
+	max-width: 60%;
+	margin-top: 100px;
+}
+
+.desc a {
+	padding-left: 40px;
+	border: 0;
+	font-weight: 700;
+}
+
+.desc a:hover {
+	border: 0;
+}
+
+.alignright {
+	float: right;
+  	margin: 0 0 1.875rem 1.875rem;
+}
+
+.wp-caption-text {
+	font-size: 0.75rem;
+	padding: 0.625rem 0.3125rem;
+	opacity: 0.8;
+}
+
+.page-content {
+	font-size: 18px;
+	padding-top: 100px;
+	padding-right: 80px;
+	padding-bottom: 60px;
+}
