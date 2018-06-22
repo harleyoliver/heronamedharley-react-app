@@ -17,7 +17,7 @@ class Single extends React.Component {
 	}
 
 	loadPost = (postId) => {
-		fetch(`http://wordpress.heronamedharley.com/wp/wp-json/wp/v2/posts/${postId}`)
+		fetch(`http://wordpress.heronamedharley.com/wp-json/wp/v2/posts/${postId}`)
 			.then(data => data.json())
 			.then(singlePost => {
 				console.log(singlePost);

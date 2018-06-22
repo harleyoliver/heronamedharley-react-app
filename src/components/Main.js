@@ -19,7 +19,7 @@ class Main extends React.Component {
 
 	loadPosts = () => {
 
-		fetch(`http://wordpress.heronamedharley.com/wp/wp-json/wp/v2/posts?per_page=20`)
+		fetch(`http://wordpress.heronamedharley.com/wp-json/wp/v2/posts?per_page=20`)
 		.then(data => data.json())
 		.then(posts => {
 			this.setState({
