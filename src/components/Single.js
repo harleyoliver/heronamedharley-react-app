@@ -37,7 +37,7 @@ class Single extends React.Component {
 				});
 				localStorage.setItem(
 					`post-${postId}`,
-					JSON.stringify(this.state.post.singlePost)
+					JSON.stringify(this.state.singlePost)
 				);
 			})
 	}
