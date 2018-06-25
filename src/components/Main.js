@@ -19,6 +19,14 @@ class Main extends React.Component {
 
 	loadPosts = () => {
 
+		const localStoragePosts = localStorage.getItem(`posts`);
+
+		if (localStoragePosts) {
+			const localPosts = JSON.parse(localStoragePosts);
+			this.setState({ posts: localPosts, loading: false });
+			return;
+		}
+
 		fetch(`https://wordpress.heronamedharley.com/wp-json/wp/v2/posts?per_page=20`)
 		.then(data => data.json())
 		.then(posts => {
@@ -26,6 +34,10 @@ class Main extends React.Component {
 				posts: posts,
 				loading: false
 			});
+			localStorage.setItem(
+				`posts`,
+				JSON.stringify(this.state.posts)
+			);
 		})
 	}
 

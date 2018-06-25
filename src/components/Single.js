@@ -18,6 +18,15 @@ class Single extends React.Component {
 	}
 
 	loadPost = (postId) => {
+
+		const localStoragePost = localStorage.getItem(`post-${postId}`);
+
+		if (localStoragePost) {
+			const localPost = JSON.parse(localStoragePost);
+			this.setState({ post: localPost, loading: false });
+			return;
+		}
+
 		fetch(`https://wordpress.heronamedharley.com/wp-json/wp/v2/posts/${postId}`)
 			.then(data => data.json())
 			.then(singlePost => {
@@ -26,6 +35,10 @@ class Single extends React.Component {
 					post: singlePost,
 					loading: false
 				});
+				localStorage.setItem(
+					`post-${postId}`,
+					JSON.stringify(this.state.post.singlePost)
+				);
 			})
 	}
 
