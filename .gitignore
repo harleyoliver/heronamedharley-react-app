@@ -1,3 +1,4 @@
 /node_modules
 /_dev
+.DS_Store
 gulpfile.js
