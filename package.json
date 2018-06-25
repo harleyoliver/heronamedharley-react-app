@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-sass": "^4.0.1",
     "react-scripts": "0.8.5"
   },
   "dependencies": {

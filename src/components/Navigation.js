@@ -6,7 +6,9 @@ class Navigation extends React.Component {
 		return (
 			<div className="navigation">
 				<h1>Hero Named Harley.</h1>
-				<h3>hello@heronamedharley.com</h3>
+				<a href="mailto:hello@heronamedharley.com?subject=G'day muscles, whaddya know?">
+					<h3>hello@heronamedharley.com</h3>
+				</a>
 			</div>
 		)
 	}

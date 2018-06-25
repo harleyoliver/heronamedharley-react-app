@@ -1,5 +1,6 @@
 import React from 'react';
 import Loader from './Loader';
+import Navigation from './Navigation';
 import { Link } from 'react-router-dom';
 
 class Single extends React.Component {
@@ -51,6 +52,7 @@ class Single extends React.Component {
 
 		return (
 			<div>
+				<Navigation />
 				<div className="single-post container">
 					<div className="desc">
 						<h1 dangerouslySetInnerHTML={ { __html: post.title.rendered } } style={divStyle}></h1>
