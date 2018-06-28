@@ -45,14 +45,13 @@ class Single extends React.Component {
         <div className="single-post container">
           <div className="desc">
             <h1 dangerouslySetInnerHTML={{ __html: post.title.rendered }} style={divStyle} />
+          </div>
+          <div className="page-content">
+            <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
             <Link to="/">
               <i className="fas fa-angle-left" /> Back
             </Link>
           </div>
-          <div
-            dangerouslySetInnerHTML={{ __html: post.content.rendered }}
-            className="page-content"
-          />
         </div>
       </div>
     );
