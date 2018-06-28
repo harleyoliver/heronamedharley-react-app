@@ -5,14 +5,14 @@ import Main from './components/Main';
 import Single from './components/Single';
 
 const Root = function() {
-	return(
-		<BrowserRouter>
-			<div>
-				<Route exact path="/" component={Main} />
-				<Route path="/:postId/:postSlug" component={Single} />
-			</div>
-		</BrowserRouter>
-	)
-}
+  return (
+    <BrowserRouter>
+      <div>
+        <Route exact path="/" component={Main} />
+        <Route path="/:postId/:postSlug" component={Single} />
+      </div>
+    </BrowserRouter>
+  );
+};
 
 render(<Root />, document.querySelector('#root'));
