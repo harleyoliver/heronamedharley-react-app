@@ -1,6 +1,6 @@
-# React WordPress Search
+# HeroNamedHarley React/WordPress REST API Powered App
 
-1. Clone into whatever folder you wish
-2. `cd` into the folder and run `npm install`
-3. Wait for npm wizardry to complete
-4. run `npm start`
+1.  Clone into whatever folder you wish
+2.  `cd` into the folder and run `npm install`
+3.  Wait for npm wizardry to complete
+4.  run `npm start`
