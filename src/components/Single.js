@@ -20,7 +20,6 @@ class Single extends React.Component {
     fetch(`https://wordpress.heronamedharley.com/wp-json/wp/v2/posts/${postId}`)
       .then(data => data.json())
       .then(singlePost => {
-        console.log(singlePost);
         this.setState({
           post: singlePost,
           loading: false,
@@ -29,17 +28,16 @@ class Single extends React.Component {
   }
 
   render() {
+    const { post, loading } = this.state;
     const colors = ['#95a5a6', '#bdc3c7', '#7f8c8d', '#2c3e50', '#34495e'];
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     const divStyle = {
       background: randomColor,
     };
 
-    if (this.state.loading) {
+    if (loading) {
       return <Loader message="Fetching Post" />;
     }
-
-    const { post } = this.state;
 
     return (
       <div>
