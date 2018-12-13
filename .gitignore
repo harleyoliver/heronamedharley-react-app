@@ -1,6 +1,7 @@
 /node_modules
 /_dev
 /build
+/server-build
 /vendor
 .DS_Store
 gulpfile.js

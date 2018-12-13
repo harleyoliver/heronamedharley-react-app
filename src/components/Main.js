@@ -2,7 +2,7 @@ import React from 'react';
 import Loader from './Loader';
 import Results from './Results';
 import Navigation from './Navigation';
-import '../styles.css';
+//import '../styles.css';
 
 class Main extends React.Component {
 	constructor() {
